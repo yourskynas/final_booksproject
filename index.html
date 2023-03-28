@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  	<title>Моя книжная полка</title>
+    
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="all-items">
+      <h1>Книжная полка</h1>
+
+      <div class="addBook-button-flex"><button id="addBook-button" class="addBook-button addBook-button-m">Добавить книгу</button></div>
+
+      <div class="display-on-off" id="displayOnOff">
+        <div class="display-on-off-bc">
+
+          <div>
+            <p class="p-input">Название книги</p>
+            <input id="nameBook"/>
+          </div>
+
+          <div>
+            <p class="p-input">Автор книги</p>
+            <input id="authorBook"/>
+          </div>
+
+          <div>
+            <p class="p-input">Год издания книги</p>
+            <input id="yearBook"/>
+          </div>
+
+          <div>
+            <p class="p-input">Ссылка на изображение книги</p>
+            <input id="hrefImgBook"/>
+          </div>
+
+          <div class="w-wrap">
+            <div class="wrap"><button id="safe-book" class="addBook-button addBook-button-w">Сохранить</button></div>
+            <div class="wrap"><button id="close-book" class="addBook-button addBook-button-w">Закрыть</button></div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="display-on-off" id="updateModal">
+        <div class="display-on-off-bc">
+
+          <div>
+            <p class="p-input">Название книги</p>
+            <input id="nameBookUpdate"/>
+          </div>
+
+          <div>
+            <p class="p-input">Автор книги</p>
+            <input id="authorBookUpdate"/>
+          </div>
+
+          <div>
+            <p class="p-input">Год издания книги</p>
+            <input id="yearBookUpdate"/>
+          </div>
+
+          <div>
+            <p class="p-input">Ссылка на изображение книги</p>
+            <input id="hrefImgBookUpdate"/>
+          </div>
+
+          <div class="w-wrap">
+          <div class="wrap"><button id="closeModal" class="addBook-button addBook-button-w">Закрыть</button></div>
+          <div class="wrap"><button id="updateBookButton" class="addBook-button addBook-button-w">Обновить</button></div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div id="container"></div>
+
+	  </div>
+
+    
+    <script src="/script.js"></script>
+            
+  </body>
+</html>

@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ded7d7;
+    border-radius: 20px;
+    /* flex-grow: 1; */
+    width: calc((100% - 20px * 3)/ 4);
+}
+
+.book-item {
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #ded7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-img {
+    height: 100%;
+    width: 100%;
+    margin: 0 18px;
+}
+
+h1 {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -.045em;
+}
+
+h2 {
+    font-size: 14px;
+    margin-top: 24px;
+    font-weight: 600;
+    color: #171717;
+    text-align: center;
+}
+
+h3 {
+    background-color: #CCFBF1;
+    border-radius: 30px;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #115E59;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 12px;
+}
+
+p {
+    color: #737373;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid #ded7d7;
+    border-radius: 20px;
+    margin-bottom: 17px;
+    margin-top: 3px;
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+input:focus {
+    color: #737373;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+}
+
+.p-input {
+    font-size: 14px;
+    color: #115E59;
+    padding-left: 5px;
+}
+
+.display-on-off {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #17171741;
+}
+
+.update-display-width {
+    max-width: 1024px;
+    margin: 0 auto;  
+}
+
+.u-d-n {
+    display: flex;
+}
+
+.display-on-off-bc {
+    padding-left: 32px;
+    padding-right: 32px;
+    border: 1px solid #ded7d7;
+    border-radius: 20px;
+    padding-top: 32px;
+    margin-bottom: 2rem;
+    background-color: #fafafa;
+}
+
+.addBook-button-w{
+    width: 100%;
+}
+
+.w-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.wrap{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.book-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-in-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.book-bottom {
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    color: #404040;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+button {
+    border: none;
+    background-color: #fafafa;
+    padding: 16px 0px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    /* display: inline-block; */
+}
+
+.book-bottom-rightBorder {
+    border-right: 1px solid #ded7d7;
+}
+
+.addBook-button {
+    background-color: #CCFBF1;
+    border-radius: 30px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #115E59;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: font-size 1ms;
+}
+
+.addBook-button:hover {
+    font-size: 15px;
+}
+
+.all-items {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .book {
+        width: calc((100% - 20px * 2)/ 3);
+    }
+
+    h1 {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        padding-left: 10px;
+        font-size: 45px;
+    }
+
+    .book-item {
+        padding: 25px;
+    }
+
+    .addBook-button {
+        margin-bottom: 1.5rem;
+    }
+
+    .addBook-button-m {
+        margin-left: 10px;
+    }
+
+    .display-on-off-bc {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+
+    input {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 500px) {
+    .book {
+        width: calc((100% - 20px * 1)/ 2);
+    }
+
+    h2 {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    h1 {
+        padding-top: 1rem;
+        padding-left: 5px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .book-item {
+        padding: 20px;
+    }
+
+    .addBook-button {
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+
+    .addBook-button-m {
+        margin-left: 5px;
+    }
+
+    .addBook-button-flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    .display-on-off-bc {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+}
